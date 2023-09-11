@@ -13,4 +13,14 @@ dependencies:
   # Everyone wants to use nbgitpuller for everything, so let's do that
   - nbgitpuller=1.1.*
   # Add other packages here
-  # -
+  - geovista
+  - pyvista-xarray
+  - xarray
+  - dask
+  - distributed
+  - cartopy 
+  - xarray 
+  - netcdf4 
+  - zarr 
+  - fsspec 
+  - gcsf
