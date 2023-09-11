@@ -23,4 +23,4 @@ dependencies:
   - netcdf4 
   - zarr 
   - fsspec 
-  - gcsf
+  - gcsfs
