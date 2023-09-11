@@ -3,4 +3,4 @@
 # files (such as conda-linux-64.lock, start) in this repo.
 # Refer to the base-image/Dockerfile for documentation.
 ARG PANGEO_IMAGE_TAG=master
-FROM pangeo/pangeo-notebook:${PANGEO_BASE_IMAGE_TAG}
+FROM quay.io/pangeo/pangeo-notebook:${PANGEO_BASE_IMAGE_TAG}
