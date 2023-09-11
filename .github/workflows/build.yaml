@@ -38,7 +38,7 @@ jobs:
         # working, as it is needed in runtime.
         REPO_DIR: /srv/repo
         #
-        Uncomment and modify the following line with your image name, otherwise no push will happen
+        # Uncomment and modify the following line with your image name, otherwise no push will happen
         IMAGE_NAME: "jbusecke/pangeo_pyvista_docker_image"
 
     # Lets us monitor disks getting full as images get bigger over time
