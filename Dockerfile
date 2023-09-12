@@ -5,9 +5,9 @@ LABEL repo="https://github.com/jbusecke/pangeo_pyvista_docker_image"
 # COPY dist/*.tar.gz /build-context/
 # COPY README.rst /build-context/
 # COPY LICENSE /build-context/
-COPY requirements.txt /build-context/requirements.txt
-COPY environment.yaml /build-context/environment.yaml
-WORKDIR /build-context/
+# COPY requirements.txt /build-context/requirements.txt
+# COPY environment.yaml /build-context/environment.yaml
+# WORKDIR /build-context/
 
 RUN pip install pyvista trame geovista
 RUN pip install -r requirements.txt
