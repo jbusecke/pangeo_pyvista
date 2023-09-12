@@ -1,4 +1,4 @@
-FROM ghcr.io/pyvista/pyvista:main
+FROM ghcr.io/pyvista/pyvista:v0.42.1
 LABEL maintainer="Julius Busecked"
 LABEL repo="https://github.com/jbusecke/pangeo_pyvista_docker_image"
 
