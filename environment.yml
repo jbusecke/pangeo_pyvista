@@ -39,3 +39,5 @@ dependencies:
   - trame-vuetify>=2.3.1
   - trimesh
   - intake
+  - intake-esm 
+  - intake-xarray
