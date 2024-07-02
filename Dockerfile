@@ -16,3 +16,5 @@ USER ${NB_USER}
 COPY environment.yml /tmp/
 
 RUN mamba env update -p ${CONDA_DIR} -f /tmp/environment.yml && mamba clean -afy
+
+RUN pip install geovista pyvista-xarray pykdtree --no-deps
