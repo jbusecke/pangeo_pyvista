@@ -13,7 +13,3 @@ dependencies:
   - gcsfs
   - distributed
   - pip
-  - pip:
-    - geovista
-    - pyvista-xarray
-    - pykdtree
