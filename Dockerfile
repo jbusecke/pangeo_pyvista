@@ -4,10 +4,15 @@ LABEL repo="https://github.com/jbusecke/pangeo_pyvista_docker_image"
 
 USER root
 
-RUN apt-get update --fix-missing
-RUN apt-get install -y git groff tree vim
-RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/*
+RUN apt-get update -qq --yes > /dev/null && \
+    apt-get install --yes -qq \
+        git \
+        vim \
+        tree \
+        groff > /dev/null
 
-RUN mamba install pyproj cartopy xarray netcdf4 zarr fsspec gcsfs distributed -y
-RUN pip install geovista pyvista-xarray pykdtree --no-deps
+USER ${NB_USER}
+
+COPY environment.yml /tmp/
+
+RUN mamba env update -p ${CONDA_DIR} -f /tmp/environment.yml && mamba clean -afy
