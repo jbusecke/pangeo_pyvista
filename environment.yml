@@ -13,3 +13,4 @@ dependencies:
   - gcsfs
   - distributed
   - pip
+  - numpy<2
