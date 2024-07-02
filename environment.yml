@@ -4,40 +4,13 @@ channels:
   - conda-forge
 
 dependencies:
-  - jupyter_contrib_nbextensions==0.5.1
-  # Required until https://github.com/jupyterhub/repo2docker/pull/1196 is merged
-  - jupyterhub-singleuser>=3.0,<4.0
-  # Set default python version to 3.10 - repo2docker sets it to 3.7 instead by default,
-  # which can limit us to older package versions
-  - python=3.10
-  # Everyone wants to use nbgitpuller for everything, so let's do that
-  - nbgitpuller=1.1.*
-  # Add other packages here
-  - vtk-osmesa
-  - trame
-  - ipywidgets<9.0.0
-  - geovista
-  - pyvista
-  - pyvista-xarray
+  - pyproj
+  - cartopy
   - xarray
-  - dask
-  - distributed
-  - cartopy 
-  - xarray 
-  - netcdf4 
-  - zarr 
-  - fsspec 
+  - netcdf4
+  - zarr
+  - fsspec
   - gcsfs
-  - cmocean
-  - imageio
-  - imageio-ffmpeg
-  - jupyter-server-proxy
-  - jupyterlab<5.0.0
-  - meshio
-  - trame>=2.5.2
-  - trame-vtk>=2.5.8
-  - trame-vuetify>=2.3.1
-  - trimesh
-  - intake
-  - intake-esm 
-  - intake-xarray
+  - distributed
+  - pip
+  - numpy<2
